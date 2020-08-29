@@ -1,7 +1,6 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TheBabyxD/SaitamaRobot)
 
 ![Sabrina](https://telegra.ph/file/2950edbc65d260f512604.jpg)
-A modular telegram Python bot running on python3 with an sqlalchemy database.
 Can be found on telegram as [Sabrina](https://t.me/SabrinaRobot).
 
 
