@@ -50,7 +50,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/2950edbc65d260f512604.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/20a5cd2beb57a2378ba43.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 But Sabrina is Free Bot."""
