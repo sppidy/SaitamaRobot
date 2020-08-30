@@ -24,7 +24,7 @@ PM_START_TEXT = """
 Hi {}, my name is {}! 
 I am an Anime themed group management bot.
 You can find my list of available commands with /help.
-[Sabrina](https://t.me/Baby_xD)Support group chat is at {}.
+[Sabrina](https://t.me/Baby_xD) Support group chat is at {}.
 """
 
 
