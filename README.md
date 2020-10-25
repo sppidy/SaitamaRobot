@@ -53,7 +53,7 @@ defaults set in the sample_config, hence making it easier to upgrade.
 
 An example `config.py` file could be:
 ```
-from SaitamaRobot.sample_config import Config
+ from jarvis.sample_config import Config
 
 class Development(Config):
     OWNER_ID = 254318997  # your telegram ID
@@ -167,7 +167,7 @@ All that is needed is that your .py file is in the modules folder.
 
 To add commands, make sure to import the dispatcher via
 
-`from SaitamaRobot import dispatcher`.
+` from jarvis import dispatcher`.
 
 You can then add commands using the usual
 

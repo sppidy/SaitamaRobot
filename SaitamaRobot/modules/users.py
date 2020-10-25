@@ -2,9 +2,9 @@ from io import BytesIO
 from time import sleep
 
 import SaitamaRobot.modules.sql.users_sql as sql
-from SaitamaRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from SaitamaRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from SaitamaRobot.modules.sql.users_sql import get_all_users
+ from jarvis import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+ from jarvis.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+ from jarvis.modules.sql.users_sql import get_all_users
 from telegram import TelegramError, Update
 from telegram.error import BadRequest
 from telegram.ext import (CallbackContext, CommandHandler, Filters,

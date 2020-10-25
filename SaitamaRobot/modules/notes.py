@@ -3,13 +3,13 @@ from io import BytesIO
 from typing import Optional
 
 import SaitamaRobot.modules.sql.notes_sql as sql
-from SaitamaRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.chat_status import user_admin, connection_status
-from SaitamaRobot.modules.helper_funcs.misc import (build_keyboard,
+ from jarvis import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+ from jarvis.modules.disable import DisableAbleCommandHandler
+ from jarvis.modules.helper_funcs.chat_status import user_admin, connection_status
+ from jarvis.modules.helper_funcs.misc import (build_keyboard,
                                                     revert_buttons)
-from SaitamaRobot.modules.helper_funcs.msg_types import get_note_type
-from SaitamaRobot.modules.helper_funcs.string_handling import escape_invalid_curly_brackets
+ from jarvis.modules.helper_funcs.msg_types import get_note_type
+ from jarvis.modules.helper_funcs.string_handling import escape_invalid_curly_brackets
 from telegram import (MAX_MESSAGE_LENGTH, InlineKeyboardMarkup, Message,
                       ParseMode, Update, InlineKeyboardButton)
 from telegram.error import BadRequest

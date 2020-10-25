@@ -1,10 +1,10 @@
 import importlib
 
-from SaitamaRobot import dispatcher
-from SaitamaRobot.__main__ import (CHAT_SETTINGS, DATA_EXPORT, DATA_IMPORT,
+ from jarvis import dispatcher
+ from jarvis.__main__ import (CHAT_SETTINGS, DATA_EXPORT, DATA_IMPORT,
                                    HELPABLE, IMPORTED, MIGRATEABLE, STATS,
                                    USER_INFO, USER_SETTINGS)
-from SaitamaRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+ from jarvis.modules.helper_funcs.chat_status import dev_plus, sudo_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
