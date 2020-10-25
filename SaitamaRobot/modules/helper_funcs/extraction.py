@@ -1,7 +1,7 @@
 from typing import List, Optional
 
- from jarvis import LOGGER
- from jarvis.modules.users import get_user_id
+from jarvis import LOGGER
+from jarvis.modules.users import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 

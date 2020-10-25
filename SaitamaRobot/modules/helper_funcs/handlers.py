@@ -1,6 +1,6 @@
 import SaitamaRobot.modules.sql.blacklistusers_sql as sql
- from jarvis import ALLOW_EXCL
- from jarvis import (DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES)
+from jarvis import ALLOW_EXCL
+from jarvis import (DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES)
 
 from telegram import MessageEntity, Update
 from telegram.ext import CommandHandler, MessageHandler, RegexHandler, Filters

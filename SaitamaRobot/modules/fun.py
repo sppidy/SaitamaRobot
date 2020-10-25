@@ -7,10 +7,10 @@ from telegram.ext import CallbackContext, run_async
 from telegram.error import BadRequest
 
 import SaitamaRobot.modules.fun_strings as fun_strings
- from jarvis import dispatcher
- from jarvis.modules.disable import DisableAbleCommandHandler
- from jarvis.modules.helper_funcs.chat_status import (is_user_admin)
- from jarvis.modules.helper_funcs.extraction import extract_user
+from jarvis import dispatcher
+from jarvis.modules.disable import DisableAbleCommandHandler
+from jarvis.modules.helper_funcs.chat_status import (is_user_admin)
+from jarvis.modules.helper_funcs.extraction import extract_user
 
 GIF_ID = 'CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE'
 

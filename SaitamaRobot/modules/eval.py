@@ -5,8 +5,8 @@ import textwrap
 import traceback
 from contextlib import redirect_stdout
 
- from jarvis import LOGGER, dispatcher
- from jarvis.modules.helper_funcs.chat_status import dev_plus
+from jarvis import LOGGER, dispatcher
+from jarvis.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 

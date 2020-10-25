@@ -1,10 +1,10 @@
 import random, html
 
- from jarvis import dispatcher
- from jarvis.modules.disable import (DisableAbleCommandHandler,
+from jarvis import dispatcher
+from jarvis.modules.disable import (DisableAbleCommandHandler,
                                           DisableAbleMessageHandler)
- from jarvis.modules.sql import afk_sql as sql
- from jarvis.modules.users import get_user_id
+from jarvis.modules.sql import afk_sql as sql
+from jarvis.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async

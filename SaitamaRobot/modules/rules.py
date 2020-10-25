@@ -1,9 +1,9 @@
 from typing import Optional
 
 import SaitamaRobot.modules.sql.rules_sql as sql
- from jarvis import dispatcher
- from jarvis.modules.helper_funcs.chat_status import user_admin
- from jarvis.modules.helper_funcs.string_handling import markdown_parser
+from jarvis import dispatcher
+from jarvis.modules.helper_funcs.chat_status import user_admin
+from jarvis.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, Message,
                       ParseMode, Update, User)
 from telegram.error import BadRequest

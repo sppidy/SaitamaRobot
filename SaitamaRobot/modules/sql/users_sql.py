@@ -1,7 +1,7 @@
 import threading
 
- from jarvis import dispatcher
- from jarvis.modules.sql import BASE, SESSION
+from jarvis import dispatcher
+from jarvis.modules.sql import BASE, SESSION
 from sqlalchemy import (Column, ForeignKey, Integer, String, UnicodeText,
                         UniqueConstraint, func)
 

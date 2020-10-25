@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import func, distinct, Column, String, UnicodeText, Integer
 
- from jarvis.modules.sql import SESSION, BASE
+from jarvis.modules.sql import SESSION, BASE
 
 
 class BlackListFilters(BASE):

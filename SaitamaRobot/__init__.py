@@ -96,7 +96,7 @@ if ENV:
             "Your blacklisted chats list does not contain valid integers.")
 
 else:
-     from jarvis.config import Development as Config
+    from jarvis.config import Development as Config
     TOKEN = Config.TOKEN
 
     try:
@@ -184,7 +184,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
- from jarvis.modules.helper_funcs.handlers import (CustomCommandHandler,
+from jarvis.modules.helper_funcs.handlers import (CustomCommandHandler,
                                                         CustomMessageHandler,
                                                         CustomRegexHandler)
 

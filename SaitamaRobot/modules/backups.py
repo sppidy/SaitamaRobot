@@ -6,22 +6,22 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
 import SaitamaRobot.modules.sql.notes_sql as sql
- from jarvis import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER
- from jarvis.__main__ import DATA_IMPORT
- from jarvis.modules.helper_funcs.chat_status import user_admin
- from jarvis.modules.helper_funcs.alternate import typing_action
+from jarvis import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER
+from jarvis.__main__ import DATA_IMPORT
+from jarvis.modules.helper_funcs.chat_status import user_admin
+from jarvis.modules.helper_funcs.alternate import typing_action
 
-#  from jarvis.modules.rules import get_rules
+# from jarvis.modules.rules import get_rules
 import SaitamaRobot.modules.sql.rules_sql as rulessql
 
-#  from jarvis.modules.sql import warns_sql as warnssql
+# from jarvis.modules.sql import warns_sql as warnssql
 import SaitamaRobot.modules.sql.blacklist_sql as blacklistsql
- from jarvis.modules.sql import disable_sql as disabledsql
+from jarvis.modules.sql import disable_sql as disabledsql
 
-#  from jarvis.modules.sql import cust_filters_sql as filtersql
+# from jarvis.modules.sql import cust_filters_sql as filtersql
 # import SaitamaRobot.modules.sql.welcome_sql as welcsql
 import SaitamaRobot.modules.sql.locks_sql as locksql
- from jarvis.modules.connection import connected
+from jarvis.modules.connection import connected
 
 
 @run_async

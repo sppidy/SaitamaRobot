@@ -1,8 +1,8 @@
 from functools import wraps
 
- from jarvis import (DEL_CMDS, DEV_USERS, DRAGONS, SUPPORT_CHAT, DEMONS,
+from jarvis import (DEL_CMDS, DEV_USERS, DRAGONS, SUPPORT_CHAT, DEMONS,
                           TIGERS, WOLVES, dispatcher)
- from jarvis.mwt import MWT
+from jarvis.mwt import MWT
 from telegram import Chat, ChatMember, ParseMode, Update
 from telegram.ext import CallbackContext
 
@@ -378,6 +378,6 @@ def connection_status(func):
 
 
 # Workaround for circular import with connection.py
- from jarvis.modules import connection
+from jarvis.modules import connection
 
 connected = connection.connected

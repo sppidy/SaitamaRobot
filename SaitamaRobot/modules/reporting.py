@@ -1,10 +1,10 @@
 import html
 
- from jarvis import (LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher)
- from jarvis.modules.helper_funcs.chat_status import (user_admin,
+from jarvis import (LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher)
+from jarvis.modules.helper_funcs.chat_status import (user_admin,
                                                            user_not_admin)
- from jarvis.modules.log_channel import loggable
- from jarvis.modules.sql import reporting_sql as sql
+from jarvis.modules.log_channel import loggable
+from jarvis.modules.sql import reporting_sql as sql
 from telegram import (Chat, InlineKeyboardButton, InlineKeyboardMarkup,
                       ParseMode, Update)
 from telegram.error import BadRequest, Unauthorized
