@@ -5,7 +5,7 @@ from typing import Optional
 
 from SaitamaRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
-                          dispatcher, telethn, updater)
+                          dispatcher, telethn, updater, DEV_USERS)
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from SaitamaRobot.modules import ALL_MODULES
@@ -122,7 +122,7 @@ def test(update: Update, context: CallbackContext):
     update.effective_message.reply_text("This person edited a message")
     print(update.effective_message)
 
-
+@dev_plus
 @run_async
 def start(update: Update, context: CallbackContext):
     args = context.args
@@ -194,7 +194,7 @@ def error_callback(update: Update, context: CallbackContext):
         print(error)
         # handle all other telegram related errors
 
-
+@dev_plus
 @run_async
 def help_button(update: Update, context: CallbackContext):
     query = update.callback_query
@@ -252,7 +252,7 @@ def help_button(update: Update, context: CallbackContext):
         else:
             LOGGER.exception("Exception in help buttons. %s", str(query.data))
 
-
+@dev_plus
 @run_async
 def get_help(update: Update, context: CallbackContext):
     chat = update.effective_chat  # type: Optional[Chat]
@@ -317,7 +317,7 @@ def send_settings(chat_id, user_id, user=False):
                 "in a group chat you're admin in to find its current settings!",
                 parse_mode=ParseMode.MARKDOWN)
 
-
+@dev_plus
 @run_async
 def settings_button(update: Update, context: CallbackContext):
     query = update.callback_query
