@@ -20,12 +20,7 @@ from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
-PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am an Anime themed group management bot.
-You can find my list of available commands with /help.
-[Sabrina](https://t.me/Baby_xD) Support group chat is at {}.
-"""
+PM_START_TEXT = """ """
 
 
 
@@ -50,7 +45,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/20a5cd2beb57a2378ba43.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/d47cf2151d8b489a948ed.png"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 But Sabrina is Free Bot."""
@@ -150,19 +145,9 @@ def start(update: Update, context: CallbackContext):
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
                 SAITAMA_IMG,
-                PM_START_TEXT.format(
-                    escape_markdown(first_name),
-                    escape_markdown(context.bot.first_name), SUPPORT_CHAT),
-                parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[
-                    InlineKeyboardButton(
-                        text="Add Sabrina to your group",
-                        url="t.me/{}?startgroup=true".format(
-                            context.bot.username))
-                ]]))
     else:
-        update.effective_message.reply_text("Yo, whadup?")
+        update.effective_message.reply_text(" Who are U to Start ")
 
 
 # for test purposes
